@@ -142,26 +142,47 @@ img{
     background-repeat: no-repeat;
     background-size: 100%, 70rem;
 }
+
+@media (min-width: 1500px){
+    .sobre-nosotros {
+        background-image: linear-gradient(to right, transparent 50%,#003 50%, #000 100% ),
+        url(../imagenes/nosotros.jpg);
+        background-position: left center;
+        margin-top: 2rem;
+        padding: 6rem 0 ;
+        background-repeat: no-repeat;
+        background-size: 100%, 150rem;
+    }
+    .sobre-nosotros-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+    .texto-nosotros{
+        grid-column: 2 / 3;
+        color: #ffffff;
+    }
+}
 /* Ajuste sobre nosotros con flex */
-.sobre-nosotros-grid{
+/* .sobre-nosotros-grid{
     display: flex;
     justify-content: end;
 }
 .texto-nosotros{
     flex-basis: 46%;
-    color: #ffffff;
-}
-/* Ajuste sobre nosotros con grid */
-/* .sobre-nosotros-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-}
-.texto-nosotros{
-    grid-column: 2 / 3;
-    color: #ffffff;
-} */
-
+    color: #ffffff; */
+    /* } */
+    /* Ajuste sobre nosotros con grid */
+    .sobre-nosotros-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+    .texto-nosotros{
+        grid-column: 2 / 3;
+        color: #ffffff;
+    }
+    
 /* Listado de productos */
 .contenido-principal {
     margin-top: 3rem;
